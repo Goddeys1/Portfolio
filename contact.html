@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="theme-toggle">
+            <button id="theme-btn">🌙 Dark Mode</button>
+        </div>
+        <img src="assets/images/me.jpg" alt="Engineer Godwin" class="profile-pic">
+        <h1>Contact Me</h1>
+    </header>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <form action="submit_contact.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <h3>Or Email Me Directly:</h3>
+            <p>Email: <a href="mailto:nkrumahgodwin690@gmail.com">nkrumahgodwin690@gmail.com</a></p>
+        </section>
+        <section>
+            <h3>Connect with Me on Social Media</h3>
+            <div class="social-handles">
+                <a href="https://www.facebook.com/godwin.nkrumah.18" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/godwin_kwame_nkrumah?igsh=czY1dndjbjFmdWRl" target="_blank">Instagram</a> |
+             
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created by <strong>Engineer Godwin Kwame Nkrumah</strong> &copy; 2025</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

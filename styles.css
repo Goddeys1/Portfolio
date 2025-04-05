@@ -1,0 +1,274 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background */
+    color: #333; /* Neutral text color for readability */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333; /* Dark background for dark mode */
+    color: #fff; /* Light text color for contrast */
+}
+/* Fix for Portfolio Section in Dark Mode */
+body.dark-mode .project-card {
+    background-color: #444; /* Ensure the card has a dark background in dark mode */
+    color: #fff; /* Light text color for contrast */
+}
+
+
+
+.dark-mode .navbar {
+    background-color: #444; /* Navbar background for dark mode */
+}
+
+.dark-mode footer {
+    background-color: #444; /* Footer background for dark mode */
+}
+
+/* Header */
+.hero {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff; /* Hero section branding color */
+    color: white; /* Text color for contrast */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image scales proportionally */
+    margin: 10px auto;
+    display: block;
+    border: 3px solid white; /* Adds border around the profile picture */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    color: #ffd700; /* Highlight on hover */
+}
+
+/* Content Section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Portfolio Cards */
+.project-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Enlarge slightly on hover */
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 14px;
+}
+
+/* Blog Posts */
+.blog-post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+/* Blog Section */
+.blog-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-post {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+    background-color: #eef7ff; /* Highlighted background on hover */
+}
+
+.blog-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.blog-post h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+
+.blog-post:hover {
+    background-color: #eef7ff; /* Slightly highlighted background */
+}
+
+.blog-post h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle button:hover {
+    color: #ffd700; /* Highlight button text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    form input, form textarea {
+        font-size: 14px;
+    }
+
+    .project-card, .blog-post {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
